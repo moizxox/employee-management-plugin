@@ -1,0 +1,233 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.action-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.export-csv-btn,
+.import-csv-btn {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.export-csv-btn:hover,
+.import-csv-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+.import-csv-btn {
+  background-color: #28a745;
+}
+.import-csv-btn:hover {
+  background-color: #218838;
+}
+.csv-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.csv-import-form {
+  display: none;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.csv-import-form.active {
+  display: block;
+}
+.csv-import-form input[type="file"] {
+  margin-bottom: 10px;
+}
+.csv-import-form button {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.csv-import-form button:hover {
+  background-color: #218838;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.employee-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+}
+
+.employee-table th.sortable {
+  cursor: pointer;
+}
+
+.employee-table th.sortable:hover {
+  background-color: #f1f1f1;
+}
+
+.employee-table th.sortable::after {
+  content: " ↕";
+  font-size: 12px;
+  color: #999;
+}
+
+.employee-table th.sorted-asc::after {
+  content: " ↑";
+  color: #333;
+}
+
+.employee-table th.sorted-desc::after {
+  content: " ↓";
+  color: #333;
+}
+
+.employee-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.employee-table tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-table .empty-message {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+/* Dashboard Charts Section */
+.dashboard-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.chart-container {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-container h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #e3e6f0;
+  padding-bottom: 10px;
+}
+
+canvas {
+  height: 250px !important;
+}
+
+@media (max-width: 768px) {
+  .dashboard-charts {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+}
+
+.salary-stats-container {
+  display: flex;
+  gap: 20px;
+}
+.salary-stat {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  text-align: center;
+}
+
+.salary-stat .head-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex;
+}
+.salary-stat h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4e73df;
+  margin-bottom: 10px;
+}
+
+.refresh-stat {
+  display: inline-flex;
+  align-items: center;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.refresh-stat:hover {
+  color: #4e73df;
+}
+
+.refresh-stat .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.loading {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #e74a3b;
+}
+
+.action-sec {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
