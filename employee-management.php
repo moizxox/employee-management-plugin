@@ -2,6 +2,7 @@
 /*  Plugin Name: Employee Management
 *   Description: A plugin that will manage employee data.
 *   Version: 1.0
+*   Plugin URI: https://github.com/moizxox/employee-management-plugin
 *   Author: Mian Moiz   
 *   Author URI: https://moiz.codeletdigital.com
 */

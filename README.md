@@ -60,6 +60,5 @@ The plugin also includes simple charts to visualize:
 
 - **Author:** Muhammad Moiz
 - **Version:** 1.0.0
-- **Tech Stack:** WordPress (PHP), JavaScript (jQuery/AJAX), MySQL (`$wpdb`), Chart.js
 
 ---
